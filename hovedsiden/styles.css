@@ -6,7 +6,7 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto 1fr; 
     align-items: center;
     width: 100%;
     height: 100px;
@@ -24,8 +24,42 @@ header h1 {
     text-align: left;
     color: white;
     font-size: 24px;
-    margin-left: -15px;
+    margin-left: 0px;
 }
+
+.right-link {
+    grid-column: 2; 
+    text-align: right; 
+}
+
+.right-link ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: flex-end; 
+}
+
+.right-link li {
+    margin-left: 20px; 
+}
+
+.right-link a {
+    display: inline-block; 
+    color: white; 
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 20px; 
+    background-color: #000000; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.right-link a:hover {
+    background-color: white; 
+    color: #000; 
+}
+
 
 body {
     padding-top: 100px; 
